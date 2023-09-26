@@ -171,7 +171,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  height: 80vh;
+  height: 100%;
+  margin-bottom: 10rem;
 
 }
 
@@ -182,18 +183,49 @@ section {
   margin: auto 0;
 
 }
-
 .section__text {
   align-self: center;
   text-align: center;
-}
+  font-size: 3.8rem;}
 
+.section__text h1 {
+  align-self: center;
+  text-align: center;
+  font-size: 3.8rem;
+  color: transparent;
+  -webkit-text-stroke: 0.7px black;
+  background-image: linear-gradient(
+    black,black
+  );
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: homebg 6s linear infinite;
+  animation-delay: 2s;
+  width: 100%;
+  position: relative;
+}
+.section__text h1::before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid var(--main-color);
+  z-index: -1;
+  animation: homebgcurs 6s linear 1;
+  animation-delay: 2s;
+}
 .section__text p {
   font-weight: 600;
+  color: black;
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: center; 
+  color: black;
 }
 
 .section__text__p2 {
@@ -278,16 +310,24 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.about-containers
+{
+  display: flex;
+
+}
+.details-container ul li{
+  text-align: start;
 }
 
 .about-pic {
@@ -308,6 +348,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: 8px 10px 25px rgb(135, 135, 135);
 }
 
 .section-container {
@@ -325,6 +366,7 @@ section {
 
 #experience {
   position: relative;
+  margin-top: 6rem;
 }
 
 .experience-sub-title {
@@ -487,5 +529,26 @@ footer p {
   }
   .about-containers {
     margin-top: 0;
+  }
+}
+.details-container:hover{
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px 5px rgb(85, 85, 85);
+}
+#profile img
+{
+border-radius: 50%;
+box-shadow: 5px 5px 5px 5px rgb(174, 174, 174);
+
+}
+@keyframes homebg {
+  0%,
+  10%,
+  100% {
+    background-position: -34rem 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
   }
 }

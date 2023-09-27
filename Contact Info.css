@@ -1,48 +1,264 @@
-/* DESKTOP NAV */
-
-nav,
-.nav-links {
+.qualification {
   display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
-nav {
-  justify-content: space-around;
+.qualification-container .qualification-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 17vh;
+  animation: 1s ease-out 0s 1 slideDown;
 }
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
+.qualification-title h1 {
+  color: var(--black);
+  text-shadow: var(--shadow);
+  font-size: 50px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
+.qualification-title p {
+  color: var(--grey);
+  font-size: 20px;
+  font-weight: 300;
 }
 
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+.qualification-container .education {
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  font-size: 2rem;
-  text-shadow: 10px;
-
- 
+.education .education-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  animation: 1s ease-out 0s 1 slideDown;
 }
 
-.logo:hover {
-  cursor: default;
-  
+.education-title i {
+  color: var(--red);
+  font-size: 50px;
 }
-.con
-{
-  display: grid;
-  grid:auto auto}
-  
+
+.education-title h2 {
+  margin-top: 22px;
+  color: var(--red);
+}
+
+.education .education-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+.education-content .education-left {
+  margin-top: -150px;
+  margin-right: 10px;
+  animation: 1s ease-out 0s 1 slideRight;
+}
+
+.education-left h4 {
+  text-align: right;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.education-left p {
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.education-left .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.education-left .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.education-content .education-mid {
+  animation: 1s ease-out 0s 1 raiseUp;
+}
+
+.education-content .education-right {
+  margin-top: 35px;
+  margin-left: 10px;
+  animation: 1s ease-out 0s 1 slideLeft;
+}
+
+.education-right h4 {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.education-right p {
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.education-right .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.education-right .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.qualification-container .training {
+  display: flex;
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 raiseUp;
+}
+
+.training .training-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.training-title i {
+  color: var(--red);
+  font-size: 50px;
+}
+
+.training-title h2 {
+  margin-top: 22px;
+  color: var(--red);
+}
+
+.training .training-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  margin-left: -50px;
+}
+
+.training-content .training-left {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 slideRight;
+}
+
+.google h4 {
+  text-align: right;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.google p {
+  margin-left: -30px;
+  text-align: center;
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.google .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.google .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.bootcamp {
+  margin-top: 60px;
+}
+
+.bootcamp h4 {
+  text-align: right;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.bootcamp p {
+  text-align: left;
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.bootcamp .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.bootcamp .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.training-content .training-mid {
+  animation: 1s ease-out 0s 1 raiseUp;
+}
+
+.training-content .training-right {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 slideLeft;
+}
+.training-right {
+  margin-top: 190px;
+}
+
+.schoters h4 {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.schoters p {
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.schoters .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.schoters .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.huffaz {
+  margin-top: 65px;
+}
+
+.huffaz h4 {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.huffaz p {
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.huffaz .time-line {
+  color: var(--black);
+  font-size: 15px;
+}
+
+.huffaz .time-line i {
+  color: var(--grey);
+  font-size: 18px;
+}

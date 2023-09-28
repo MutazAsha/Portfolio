@@ -878,4 +878,10 @@ box-shadow: 5px 5px 5px 5px rgb(174, 174, 174);
   /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
-  }}
+  }
+}
+pre
+{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
